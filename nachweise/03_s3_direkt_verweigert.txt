@@ -1,0 +1,3 @@
+$ curl -sS -i https://kumo-matcha-625d6ee19a8ea1047f0d70221e.s3.eu-central-1.amazonaws.com/index.html | sed -n '1p;/<Code>/p'
+HTTP/1.1 403 Forbidden
+<Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>9DGY26V57VQKSWZG</RequestId><HostId>lDKxFsvMRxIZOPiIOB9Mf27Y6wZNSfK/6CC7GMs9WKRmmoui+4iGOl7qznQy5VlbCOPJJllsVC0=</HostId></Error>

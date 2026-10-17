@@ -1,0 +1,3 @@
+$ curl -sS -I http://d3l4tawrnxmj13.cloudfront.net/ | sed -n '1p;/^location/Ip'
+HTTP/1.1 301 Moved Permanently
+Location: https://d3l4tawrnxmj13.cloudfront.net/

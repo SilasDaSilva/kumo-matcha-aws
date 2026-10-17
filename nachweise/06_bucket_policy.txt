@@ -1,0 +1,20 @@
+$ aws s3api get-bucket-policy --bucket kumo-matcha-625d6ee19a8ea1047f0d70221e --query Policy --output text | python3 -m json.tool
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "AllowCloudFrontServicePrincipalReadOnly",
+            "Effect": "Allow",
+            "Principal": {
+                "Service": "cloudfront.amazonaws.com"
+            },
+            "Action": "s3:GetObject",
+            "Resource": "arn:aws:s3:::kumo-matcha-625d6ee19a8ea1047f0d70221e/*",
+            "Condition": {
+                "StringEquals": {
+                    "AWS:SourceArn": "arn:aws:cloudfront::<KONTO-ID>:distribution/E2O1Q01KZRAH42"
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+$ aws budgets describe-budgets --account-id <KONTO-ID>
+[
+    {
+        "Name": "kumo-matcha-monthly",
+        "Limit": {
+            "Amount": "25.0",
+            "Unit": "USD"
+        },
+        "Typ": "COST",
+        "Zeitraum": "MONTHLY"
+    }
+]

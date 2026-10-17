@@ -1,0 +1,6 @@
+$ curl -sS -i https://d3l4tawrnxmj13.cloudfront.net/ | sed -n '1p;/^content-type/Ip;/^x-cache/Ip;/^strict-transport/Ip;/<h1>/p'
+HTTP/2 200 
+content-type: text/html
+x-cache: Miss from cloudfront
+strict-transport-security: max-age=31536000
+    <h1>Kumo Matcha</h1>

@@ -1,0 +1,3 @@
+$ curl -sS -i https://d3l4tawrnxmj13.cloudfront.net/gibt-es-nicht | sed -n '1p;/<h1>/p'
+HTTP/2 404 
+    <h1>Seite nicht gefunden</h1>

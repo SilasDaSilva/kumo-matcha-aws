@@ -1,0 +1,9 @@
+$ aws s3api get-public-access-block --bucket kumo-matcha-625d6ee19a8ea1047f0d70221e
+{
+    "PublicAccessBlockConfiguration": {
+        "BlockPublicAcls": true,
+        "IgnorePublicAcls": true,
+        "BlockPublicPolicy": true,
+        "RestrictPublicBuckets": true
+    }
+}
